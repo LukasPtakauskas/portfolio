@@ -61,23 +61,42 @@ nav {
 }
 
 #projects {
+  display: flex;
+  flex-direction: row;
   background-color: #9c9;
   padding-top: 30%;
   padding-bottom: 25%;
   width: 90%;
   height: 100%;
 }
-#projects>h1{
+
+#my_proj {
+  color: black;
   text-align: center;
   justify-content: center;
+  width:100%;
 }
-.project-tile {}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  width: 300px;
+  height:400px;
+
+}
+
+
 
 .project-img {
-  width:
+  width:300px;
+  height: auto;
 }
 
-.project-name {}
+.project-name {
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .trapezoid {
   border-bottom: 100px solid red;
@@ -86,32 +105,39 @@ nav {
   height: 0;
   width: 100px;
 }
-
+#contact{
+  display: flex;
+  flex-direction: row;
+  width:85%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .circle {
   width: 200px;
-  height: 100px;
-  background-color:  darkgreen;
+  height: 110px;
   border-radius: 50%;
   border: 10px solid darkgreen;
-  color:lightgray;
+  color: lightgray;
   text-align: center;
-  padding-top: 100px;
-  transition: * ease-in-out 5000ms;
-  //transition: color ease-in-out 2000ms;
-  //transition: border-color ease-in-out 2000ms;
+  padding-top: 90px;
+  background-color: #262;
+  transition: background-color ease-in-out 2500ms;
+  transition: color ease-in-out 2000ms;
+  transition: border-color ease-in-out 2000ms;
   font-size: 20px;
-  //transition: font-size ease-in-out 2000ms;
-
+  transition: font-size ease-in-out 200ms;
+}
+#cirlce_more_text{
+  height:150px;
+  padding-top: 50px;
 }
 .circle:hover {
-  color:white;
-  background-color: black;
+  color: white;
+  background-color: #131;
   border-color: green;
   font-size: 23px;
-
-
 }
 
-a{
+a {
   all: unset;
 }
