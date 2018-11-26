@@ -5,9 +5,13 @@
 
 body {
   background-color: #a1b2c3;
+  font-family: 'Open Sans', sans-serif;
+  color:darkgreen;
+  font-weight: 500;
 }
 
 nav {
+  background-image:
   position: fixed;
   top: 0px;
   left: 0px;
@@ -17,127 +21,65 @@ nav {
   flex-direction: row-reverse;
   background-color: #a1b2c3;
 }
+nav > a {
+text-decoration: none;
+color: white;
+transition: color 1s;
+margin-left:
+}
+a:hover{
+color:lightgreen;
+background-color: #7E8D9C;
+}
 
-.nav-link {
-  display: grid;
-  place-items: center;
-  all: unset;
+
+
+#projects{
+  margin-top:100%;
+  border:30px ridge gold;
+  padding-left: 15%;
+  padding-right:  15%;
+  display:grid;
+  place-items:center;
+}
+#apps{
+  margin-top:100%;
+
+}
+
+#projects_header{
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 50px;
-  background-color: #a1b2c3;
-  transition: background-color ease-in-out 250ms;
+  font-size: 26px;
+  font-weight: 600;
 }
-
-.nav-link:hover {
-  background-color: #def;
-}
-
-.redline {
-  background-color: #e11;
-  padding: 5px 60% 5px 60%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#welcome-section {
-  background-color: #9c9;
-  padding-top: 45%;
-  padding-bottom: 25%;
-  width: 90%;
-  height: 100%;
-}
-
-#welcome-section>h1 {
-  text-align: center;
-  color: darkgreen;
-}
-
-#welcome-section>p {
-  text-align: center;
-  color: green;
-  font-weight: bold;
-}
-
-#projects {
-  display: flex;
-  flex-direction: row;
-  background-color: #9c9;
-  padding-top: 30%;
-  padding-bottom: 25%;
-  width: 90%;
-  height: 100%;
-}
-
-#my_proj {
-  color: black;
-  text-align: center;
-  justify-content: center;
-  width:100%;
-}
-
-.project-tile {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-  width: 300px;
-  height:400px;
+.project_tile{
+  border: 15px ridge beige;
+  display: inline-block;
 
 }
+#p_land{
+  background-color: black;
+  color:silver;
+}
+#p_doc{
+  background-color: steelblue;
+  color:lightblue;
+}
+#p_form{
+  background-color: white;
+}
+#p_tribute{
+  background-color: gold;
+}
 
-
-
-.project-img {
+.project_tile > img{
   width:300px;
-  height: auto;
+  height:auto;
 }
-
-.project-name {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.trapezoid {
-  border-bottom: 100px solid red;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 100px;
+.project-name{
+  font-size: 18px;
+  text-align: center;
 }
 #contact{
-  display: flex;
-  flex-direction: row;
-  width:85%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.circle {
-  width: 200px;
-  height: 110px;
-  border-radius: 50%;
-  border: 10px solid darkgreen;
-  color: lightgray;
-  text-align: center;
-  padding-top: 90px;
-  background-color: #262;
-  transition: background-color ease-in-out 2500ms;
-  transition: color ease-in-out 2000ms;
-  transition: border-color ease-in-out 2000ms;
-  font-size: 20px;
-  transition: font-size ease-in-out 200ms;
-}
-#cirlce_more_text{
-  height:150px;
-  padding-top: 50px;
-}
-.circle:hover {
-  color: white;
-  background-color: #131;
-  border-color: green;
-  font-size: 23px;
-}
-
-a {
-  all: unset;
+  margin-top: 100%;
 }
