@@ -1,3 +1,4 @@
+/* these decide the main feel of the page*/
 #grid-ultimate {
   display: grid;
   place-items: center;
@@ -6,11 +7,12 @@
 body {
   background-color: #a1b2c3;
   font-family: 'Open Sans', sans-serif;
-  color:darkgreen;
+  color: darkgreen;
   font-weight: 500;
 }
 
-nav {
+/*nav bar*/
+#navbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -20,65 +22,99 @@ nav {
   flex-direction: row-reverse;
   background-color: #a1b2c3;
 }
-nav > a {
-text-decoration: none;
-color: white;
-transition: color 1s;
-margin-left:
-}
-a:hover{
-color:lightgreen;
-background-color: #7E8D9C;
+
+#navbar>a {
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+  margin-left:
 }
 
+#navbar>a:hover {
+  color: lightgreen;
+  background-color: #7E8D9C;
+}
 
-
-#projects{
-  margin-top:100%;
-  border:30px ridge gold;
+/*projects*/
+#projects {
+  margin-top: 100%;
+  border: 30px ridge gold;
   padding-left: 15%;
-  padding-right:  15%;
-  display:grid;
-  place-items:center;
-}
-#apps{
-  margin-top:100%;
-
+  padding-right: 15%;
 }
 
-#projects_header{
+#apps {
+  margin-top: 100%;
+}
+
+#projects_header {
   text-align: center;
   font-size: 26px;
   font-weight: 600;
 }
-.project_tile{
+
+.project_tile {
   border: 15px ridge beige;
   display: inline-block;
+}
 
-}
-#p_land{
+#p_land {
   background-color: black;
-  color:silver;
+  color: silver;
 }
-#p_doc{
+
+#p_doc {
   background-color: steelblue;
-  color:lightblue;
+  color: lightblue;
 }
-#p_form{
+
+#p_form {
   background-color: white;
 }
-#p_tribute{
+
+#p_tribute {
   background-color: gold;
 }
 
-.project_tile > img{
-  width:300px;
-  height:auto;
+.project_tile>img {
+  width: 300px;
+  height: auto;
 }
-.project-name{
+
+.project-name {
   font-size: 18px;
   text-align: center;
 }
-#contact{
+
+#contact {
   margin-top: 100%;
+}
+
+/*contacts*/
+
+
+#contact{
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  background-color: #bbd;
+  /*nice color, not just a joke*/
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  padding-top: 90px;
+  text-align: center;
+  transition:border-radius 2s ease-in-out;
+}
+.circle:hover {
+  border-radius: 0;
+}
+#profile-link{
+  padding-top: 20px;
+  height:170px;
+}
+.circle>a {
+  all: unset;
 }
