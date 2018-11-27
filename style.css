@@ -1,65 +1,71 @@
+/*global scale (I wanna say investigation)*/
+a{
+  all:unset;
+}
+
 html,
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  color:darkgreen;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+#my_body_is_a_grid {
+  display: grid;
+  place-items: center;
+  /*this is a simple way to put everything neatly in the middle, i like it*/
 }
 
-.intro {
-  top: 0;
-  background: #e0ebe8;
-  min-height: 55vh;
-  padding-top: 45vh;
-  /*   line-height: 100vh; */
-  /*   width:100%;
-  height:96vh;
-border:solid; */
-}
-
-.intro p {
-  color: green;
-}
-
-nav ul {
-  text-align: right;
+/*nav*/
+#navbar {
   position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  background-color: #e0ebe8;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #a1b2c3;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 55px;
-  margin-bottom: 15px;
-  margin-top: 25px;
-}
-
-nav ul li a {
-  color: #008080;
+.nav-link {
   text-decoration: none;
+  color: white;
+  transition: color 1s;
+  margin-left:50px;
 }
 
-nav ul li a:hover {
+.nav-link:hover {
+  color: lightgreen;
+  background-color: #7E8D9C;
+}
+
+/*hello!*/
+#welcome-section {
+  top: 0;
+  background: #bbd;
+
+  min-height: 150px;
+  padding-top: 45vh;
+}
+
+/*hello*/
+.intro {
   color: green;
 }
 
+/*projects section*/
 .work {
   padding-top: 60px;
   margin-top: -60px;
 }
 
 .work .work-header {
-  margin-top: 50px;
-  color: #008080;
-  font-weight: normal;
+  font-weight: 500;
+  color: #088;
 }
 
 .project {
-  text-decoration: none;
   color: #008080;
   display: inline-block;
   overflow: hidden;
@@ -82,33 +88,26 @@ nav ul li a:hover {
 
 .show-all {
   text-decoration: none;
-  display: block;
-  width: 200px;
-  height: 30px;
-  margin: 20px auto 90px;
-   background: #e0ebe8;
   color: #008080;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 22px;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  background: #e0ebe8;
   border: 2px solid #90C695;
   border-radius: 4px;
   cursor: pointer;
-  padding-top:10px;
+  padding-top: 10px;
+  transition: border-radius 2s ease-in-out;
 }
-
 
 .show-all:hover {
-  background: #E4F1FE;
-  color: green;
+  border-radius: 0;
 }
 
-@media only screen and (max-width: 500px) {
-  nav ul {
-    text-align: center;
-  }
-  nav ul li {
-    margin: 20px;
-  }
+@media only screen and (max-width: 600px) {
   .project {
     margin: 40px 0;
   }
@@ -145,21 +144,7 @@ nav ul li a:hover {
   color: green;
 }
 
-footer {
-  padding: 20px;
-  background: #22313F;
-  color: white;
-  line-height: 40px;
-}
-
-footer a {
-  color: white;
-}
-
-@media only screen and (max-width: 367px) {
-  /*    #contact{
-    min-height:1100px;
-  } */
+@media only screen and (max-width: 600px) {
   .contact-details {
     border: 2px solid #90C695;
     border-radius: 0;
@@ -168,4 +153,11 @@ footer a {
     padding: 10px;
     line-height: normal;
   }
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background: steelblue;
+  color: lightgray;
 }
